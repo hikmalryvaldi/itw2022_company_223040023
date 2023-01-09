@@ -12,8 +12,22 @@
       crossorigin="anonymous"
     />
 
+    <!-- Icon Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css" />
@@ -258,26 +272,94 @@
     <!-- End Genius Infokation TCG -->
 
     <!-- Senjata Baru -->
-    <!-- <div class="containerWeapon" id="senjata">
-      <div class="headerWeapon">
-        <img
-          src="img/SenjataBaru.webp"
-          alt="Karakter"
-          style="width: 100%; padding: 20px"
-        />
-      </div>
-      <div class="boxWeapon" style="height: 120vh">
-        <div
-          class="box text-info position-relative"
-          style="
-            background-image: url(img/SenjataWanderer.webp);
-            width: 70%;
-            height: 300px;
-          "
-        >
-          <h1 style="position: absolute; top: 20px">Toukabou Shigure</h1>
+    <div class="containerSenjata" id="senjata">
+      <img
+        src="img/SenjataBaru.webp"
+        alt=""
+        style="
+          width: 100%;
+          border-bottom: 1px solid white;
+          border-top: 1px solid white;
+        "
+      />
+      <div class="boxSenjata position-relative" style="height: 100vh">
+        <div class="senjataWanderer">
+          <img
+            src="img/SenjataWanderer.webp"
+            class="img-fluid"
+            alt=""
+            style="
+              position: absolute;
+              max-width: 765px;
+              height: 185;
+              left: 25%;
+              top: 15%;
+              background-size: 100%;
+            "
+          />
+          <h2
+            style="
+              font-family: 'Lobster', cursive;
+              color: rgb(214, 181, 128);
+              position: absolute;
+              width: 386px;
+              height: 43px;
+              left: 47%;
+              top: 17%;
+            "
+          >
+            Tulaytullah's Remebrance
+          </h2>
           <p
-            style="width: 400px; font-size: 10px; position: absolute; top: 20px"
+            style="
+              color: rgb(202, 230, 245);
+              text-align: center;
+              white-space: pre-wrap;
+              position: absolute;
+              left: 42%;
+              top: 22%;
+              font-size: 14px;
+            "
+          >
+            "Lonceng yang terbuat dari safir berwarna gelap dan perak murni.
+            Suara gemanya sangat tajam dan jauh."
+          </p>
+        </div>
+        <div class="senjataBaru">
+          <img
+            src="img/NewWeapon.webp"
+            alt=""
+            style="
+              position: absolute;
+              width: 787px;
+              height: 322;
+              left: 25%;
+              top: 45%;
+            "
+          />
+          <h2
+            style="
+              font-family: 'Lobster', cursive;
+              color: rgb(214, 181, 128);
+              position: absolute;
+              width: 386px;
+              height: 43px;
+              left: 36%;
+              top: 55%;
+            "
+          >
+            Toukabou Shigure
+          </h2>
+          <p
+            style="
+              color: rgb(202, 230, 245);
+              text-align: center;
+              white-space: pre-wrap;
+              position: absolute;
+              left: 25%;
+              top: 60%;
+              font-size: 14px;
+            "
           >
             "Payung kertas minyak yang agak istimewa. Meskipun sudah terbiasa
             dengan angin dan hujan dalam pengembaraan yang panjang, mungkin
@@ -286,8 +368,322 @@
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- End Senjata Baru -->
+
+    <!-- Informasi Versi Baru -->
+    <div class="containerInformasi" id="informasi" style="height: 120vh">
+      <img
+        src="img/informasiVersiBaru.webp"
+        alt=""
+        style="
+          width: 100%;
+          border-bottom: 1px solid white;
+          border-top: 1px solid white;
+        "
+      />
+      <div id="carouselExampleFade" class="carousel slide carousel-fade pt-5">
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="display: flex; justify-content: center"
+          >
+            <img src="img/RaidenShogun.webp" alt="..." style="width: 309px" />
+            <p
+              style="
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                position: absolute;
+                left: 23%;
+                top: 75%;
+              "
+            >
+              Raiden Shogun
+            </p>
+            <img src="img/AratakiItto.webp" alt="..." style="width: 309px" />
+            <p
+              style="
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                position: absolute;
+                top: 75%;
+                left: 43.5%;
+              "
+            >
+              Arataki Itto
+            </p>
+            <img src="img/KamisatoAyato.webp" alt="..." style="width: 394px" />
+            <p
+              style="
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                position: absolute;
+                top: 75%;
+                right: 27.5%;
+              "
+            >
+              Kamisato Ayato
+            </p>
+          </div>
+          <div
+            class="carousel-item"
+            style="display: flex; justify-content: space-evenly"
+          >
+            <img src="img/eventAkitsu.webp" alt="..." style="width: 345px" />
+            <p
+              style="
+                color: rgb(202, 230, 245);
+                font-weight: bold;
+                position: absolute;
+                top: 6%;
+                left: 32%;
+              "
+            >
+              Akitsu <br />
+              Kimodameshi
+            </p>
+            <img src="img/kotaKabut.webp" alt="..." style="width: 345px" />
+            <p
+              style="
+                color: rgb(202, 230, 245);
+                font-weight: bold;
+                position: absolute;
+                top: 23%;
+                right: 24%;
+              "
+            >
+              Kota Kabut: Alam Pasir
+            </p>
+          </div>
+          <div
+            class="carousel-item"
+            style="display: flex; justify-content: space-evenly"
+          >
+            <img
+              src="img/eventJejakAngin.webp"
+              alt="..."
+              style="width: 345px"
+            />
+            <p
+              style="
+                color: rgb(4, 12, 84);
+                font-weight: bold;
+                position: absolute;
+                bottom: 0%;
+                left: 25%;
+              "
+            >
+              Jejak Sang Angin
+            </p>
+            <img src="img/melintasiAlam.webp" alt="..." style="width: 345px" />
+            <p
+              style="
+                color: rgb(4, 12, 84);
+                font-weight: bold;
+                position: absolute;
+                bottom: 0%;
+                right: 25%;
+              "
+            >
+              Melintasi Alam Liar
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- End Informasi Versi Baru -->
+
+    <!-- Event Lainnya -->
+    <div class="containerEvent" id="event" style="height: 120vh">
+      <img
+        src="img/HeaderImage.webp"
+        alt=""
+        style="
+          width: 100%;
+          border-bottom: 1px solid white;
+          border-top: 1px solid white;
+        "
+      />
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active pt-5">
+            <div
+              class="boxSatu"
+              style="
+                height: 560px;
+                position: relative;
+                background-image: url(img/CoverBackgroundEvent.webp);
+                background-size: cover;
+                width: 898px;
+                top: 24%;
+                left: 20%;
+              "
+            >
+              <img
+                src="img/Event1.webp"
+                class=""
+                alt="..."
+                style="width: 720px; position: absolute; top: 8.2%; left: 10%"
+              />
+              <p
+                style="
+                  color: rgb(202, 230, 245);
+                  position: absolute;
+                  bottom: 5%;
+                  left: 20%;
+                "
+              >
+                Event Web "101 Kisah Youkai" Telah Dimulai! Ikuti Event-nya
+                Untuk Mendapatkan <br />
+                Primogems Dan Hadiah Lainnya!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item pt-5">
+            <div
+              class="boxDua"
+              style="
+                height: 560px;
+                position: relative;
+                background-image: url(img/CoverBackgroundEvent.webp);
+                background-size: cover;
+                width: 898px;
+                top: 24%;
+                left: 20%;
+              "
+            >
+              <img
+                src="img/Event2.webp"
+                class=""
+                alt="..."
+                style="width: 720px; position: absolute; top: 8.2%; left: 10%"
+              />
+              <p
+                style="
+                  color: rgb(202, 230, 245);
+                  position: absolute;
+                  bottom: 5%;
+                  left: 20%;
+                "
+              >
+                Dapatkan Dan Kirimkan Kartu Ucapan Musim Dingin-mu. Temukan
+                Easter Egg <br />
+                yang Tersembunyi Dan Dapatkan Banyak Hadiah~
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- End Event Lainnya -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center">
+      <img src="img/FooterGenshin.png" alt="" />
+      <div class="icon pb-3">
+        <i
+          class="bi bi-instagram"
+          style="
+            display: inline-block;
+            width: 35px;
+            height: 34px;
+            background-color: white;
+            color: rgb(242, 133, 244);
+            border-radius: 50%;
+            font-size: 22px;
+          "
+        ></i>
+        <i
+          class="bi bi-youtube"
+          style="
+            display: inline-block;
+            width: 35px;
+            height: 34px;
+            background-color: white;
+            color: rgb(232, 40, 40);
+            border-radius: 50%;
+            font-size: 22px;
+          "
+        ></i>
+        <i
+          class="bi bi-facebook"
+          style="
+            display: inline-block;
+            width: 35px;
+            height: 34px;
+            background-color: white;
+            color: rgb(40, 94, 232);
+            border-radius: 50%;
+            font-size: 22px;
+          "
+        ></i>
+        <i
+          class="bi bi-discord"
+          style="
+            display: inline-block;
+            width: 35px;
+            height: 34px;
+            background-color: white;
+            color: rgb(33, 93, 244);
+            border-radius: 50%;
+            font-size: 22px;
+          "
+        ></i>
+        <i
+          class="bi bi-twitter"
+          style="
+            display: inline-block;
+            width: 35px;
+            height: 34px;
+            background-color: white;
+            color: rgb(33, 177, 244);
+            border-radius: 50%;
+            font-size: 22px;
+          "
+        ></i>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- JavaSCript -->
     <script

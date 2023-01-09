@@ -54,6 +54,11 @@ body {
   width: 314px;
 }
 
+footer .icon i {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 /* Responsive */
 @media screen and (max-width: 1154px) {
   .navbar .button {
